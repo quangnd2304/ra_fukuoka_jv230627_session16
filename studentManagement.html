@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+</head>
+
+<body>
+    <h2>THÔNG TIN HỌC VIÊN</h2>
+    <div class="form">
+        <label for="studentId">Mã học viên</label>
+        <input type="text" name="studentId" id="studentId" /> <br>
+        <label for="fullName">Họ và tên</label>
+        <input type="text" name="fullName" id="fullName" /><br>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" /><br>
+        <label for="phone">Số điện thoại</label>
+        <input type="text" name="phone" id="phone" /><br>
+        <label for="address">Địa chỉ</label>
+        <input type="text" name="address" id="address" /><br>
+        <label for="sex">Giới tính</label>
+        <input type="radio" name="sex" id="male" checked value="true" /><label for="male">Nam</label>
+        <input type="radio" name="sex" id="female" value="false" /><label for="female">Nữ</label><br>
+        <button id="submit">Lưu lại</button>
+    </div>
+    <table border="1">
+        <caption>DANH SÁCH HỌC VIÊN</caption>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Mã học viên</th>
+                <th>Họ và tên</th>
+                <th>Email</th>
+                <th>Điện thoại</th>
+                <th>Địa chỉ</th>
+                <th>Giới tính</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody id="listStudents">
+
+        </tbody>
+    </table>
+    <script src="./studentManagement.js"></script>
+</body>
+
+</html>
